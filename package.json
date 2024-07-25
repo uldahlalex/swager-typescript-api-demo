@@ -6,12 +6,9 @@
   "scripts": {
     "dev": "npx vite",
     "build": "npx tsc && npx vite build",
-    "lint": "npx eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "npx vite preview",
-    "scaffold": "npx swagger-typescript-api -p http://localhost:8080/swagger/v1/swagger.json -o ./ -n Api.ts --axios",
-    "deploy": "npx firebase deploy --only hosting",
-    "diagram": "npx depcruise . --exclude \"^node_modules\" --output-type dot | dot -T svg > dependency-graph.svg"
-  },
+    "scaffold": " npx swagger-typescript-api -p https://fakerestapi.azurewebsites.net/swagger/v1/swagger.json -o ./ -n Api.ts --axios"
+ },
   "dependencies": {
     "@emotion/react": "^11.13.0",
     "@faker-js/faker": "^8.4.1",
